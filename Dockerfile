@@ -76,7 +76,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
         locate \
         man \
         libmysqlclient-dev \
-        php5-mcrypt
+        php5-mcrypt \
     && sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     && cd /tmp \
     && curl -fSL https://www.openssl.org/source/openssl-${RESTY_OPENSSL_VERSION}.tar.gz -o openssl-${RESTY_OPENSSL_VERSION}.tar.gz \
